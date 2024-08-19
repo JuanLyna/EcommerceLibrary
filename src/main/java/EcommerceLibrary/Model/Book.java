@@ -12,6 +12,7 @@ import java.util.*;
 @Table(name= "books")
 public class Book {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne(fetch = FetchType.LAZY) //FetchType.LAZY carga los datos desde la base de datos cuando se llama a la entidad, necesario en esté caso para que no cargué datos basura
     @JoinColumn(name="AUTHOR_ID") //indica en que columa va a referenciar this.author
