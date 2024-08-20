@@ -1,4 +1,4 @@
-package EcommerceLibrary.Controller;
+package EcommerceLibrary.Repository;
 
 import EcommerceLibrary.Model.State;
 import org.springframework.data.jpa.repository.JpaRepository;

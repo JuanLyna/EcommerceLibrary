@@ -1,7 +1,9 @@
 package EcommerceLibrary.Model;
 import java.util.*;
 
+import EcommerceLibrary.Repository.AuthorRepository;
 import jakarta.persistence.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name= "authors")
@@ -19,8 +21,6 @@ public class Author {
     @JoinColumn(name = "ID_STATE")
     private State current;
     String nationality;
-
-
     @OneToMany(mappedBy = "author",cascade = CascadeType.ALL , orphanRemoval = true)
     //mappedBy= author: author es el  nombre del atributo en la clase Book, esto para que JPA determine que libros se almacenarán en la lista "books"  de Author
     //orphanRemoval = true significa que si libro pierde la referencia a author, esté se eliminará de la base de datos (xq no existe en nuestra lógica de empresa un libro sin autor(
