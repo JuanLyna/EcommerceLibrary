@@ -1,9 +1,7 @@
-package EcommerceLibrary.Model;
+package EcommerceLibrary.Entities;
 import java.util.*;
 
-import EcommerceLibrary.Repository.AuthorRepository;
 import jakarta.persistence.*;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name= "authors")

@@ -1,8 +1,5 @@
-package EcommerceLibrary.Model;
+package EcommerceLibrary.Entities;
 
-import EcommerceLibrary.Model.Author;
-import EcommerceLibrary.Model.Gender;
-import EcommerceLibrary.Model.State;
 import jakarta.persistence.*;
 
 

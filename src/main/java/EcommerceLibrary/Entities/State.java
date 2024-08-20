@@ -1,21 +1,27 @@
-package EcommerceLibrary.Model;
+package EcommerceLibrary.Entities;
+
 
 import jakarta.persistence.*;
 
-@Entity
-public class Gender {
 
+@Entity
+public class State {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long Id;
+
     String name;
 
-    public Gender(String name) {
+    public State(String name) {
         this.name = name;
     }
 
-    public Gender() {
+    public State() {
 
+    }
+
+    public Long getId() {
+        return Id;
     }
 
     public String getName() {
