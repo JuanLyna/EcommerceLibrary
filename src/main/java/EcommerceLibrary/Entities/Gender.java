@@ -18,6 +18,10 @@ public class Gender {
 
     }
 
+    public Long getId() {
+        return Id;
+    }
+
     public String getName() {
         return name;
     }

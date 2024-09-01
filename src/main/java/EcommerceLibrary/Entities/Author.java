@@ -60,6 +60,17 @@ public class Author {
         this.birth = birth;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
 
     public String getName() {
         return name;
